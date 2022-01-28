@@ -1,0 +1,161 @@
+
+/* Global styles */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    /* background-color: #e8e8e8; */
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Typography */
+
+.title {
+    font-size: 4rem;
+    color: #262525;
+    border-bottom: .1rem solid #262525;
+    margin: 5rem;
+    padding: 1rem;
+}
+
+.expense-form-header {
+    font-size: 2rem;
+    color: #262525;
+}
+
+/* Layout */
+
+.expense-form {
+    /* background-color: #e8e8e8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1rem;
+}
+
+.expense-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.form-fields {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20em;
+    grid-template-areas: 
+    "grid-item-1 grid-item-2"
+    "grid-item-3 grid-item-4";
+    gap: 1rem;
+}
+
+.expense-output {
+    background-color: #757575;
+    margin-bottom: 3rem;
+}
+
+.table-row:nth-child(odd) {
+    background-color: #262525;
+}
+
+.table-row:nth-child(even) {
+    background-color: #403f3f;
+}
+
+.table-cell {
+    color: #e8e8e8;
+    padding: .5rem 2.6rem;
+    text-align: left;
+}
+
+/* Components */
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #262525;
+    display: inline-block;
+    margin: .5rem;
+}
+
+.form-input {
+    font-size: 1rem;
+    color: #686767;
+    border: .1rem solid #cccccc;
+    border-radius: .5rem;
+    width: 20rem;
+    height: 2.5rem;
+    padding-left: .5rem;
+}
+
+.form-input:hover {
+    border: .2rem solid #686767;            
+}
+
+.payment-type,
+.date {
+    cursor: pointer;
+}
+
+.submit-btn-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 4rem 0 0;
+}
+
+.submit-btn {
+    position: absolute;
+    font-weight: bolder;
+    background-color: transparent;
+    color: #686767;
+    border: .1rem solid #cccccc;
+    border-radius: .5rem;
+    padding: .8rem 1.1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    color: #262525;
+    border: .2rem solid #686767;
+}
+
+.expense-output-btn {
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: #e8e8e8;
+    border: 0;
+    cursor: pointer;
+}
